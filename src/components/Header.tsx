@@ -54,7 +54,11 @@ export function Header() {
           ))}
           <Link
             to="/client-login"
-            className="ml-2 px-5 py-2.5 rounded-full bg-[var(--gradient-gold)] text-navy text-sm font-semibold hover:shadow-[var(--shadow-elegant)] transition-shadow"
+            className={`ml-2 px-5 py-2.5 rounded-full border text-sm font-semibold transition-colors ${
+              scrolled
+                ? "border-foreground/30 text-foreground hover:bg-foreground/5"
+                : "border-white/30 text-white hover:bg-white/10"
+            }`}
           >
             Client Access
           </Link>
