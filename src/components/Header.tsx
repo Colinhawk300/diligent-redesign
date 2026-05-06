@@ -52,14 +52,12 @@ export function Header() {
               {l.label}
             </Link>
           ))}
-          <a
-            href="https://login.dynastyfp.com/"
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to="/client-login"
             className="ml-2 px-5 py-2.5 rounded-full bg-[var(--gradient-gold)] text-navy text-sm font-semibold hover:shadow-[var(--shadow-elegant)] transition-shadow"
           >
             Client Access
-          </a>
+          </Link>
         </nav>
 
         <button
